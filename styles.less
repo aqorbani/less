@@ -1,0 +1,19 @@
+@background-color: #000000;
+@text-color: #d0ff00;
+
+body {
+    background-color: @background-color;
+    color: @text-color;
+    padding: 50px;
+}
+
+#border(@size: 1px) {
+border:solid @size @text-color
+}
+
+.border {
+    &:hover{
+        border-color: red;
+    }
+    #border(5px)
+}
